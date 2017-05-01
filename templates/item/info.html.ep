@@ -1,0 +1,21 @@
+% layout 'default';
+% title 'Welcome';
+<h1><%= $item->{'name'} %></h1>
+<table>
+  <tr>
+    <th>Cost</th>
+  </tr>
+  <tr>
+    <td><%= $item->{'cost'} %></td>
+  </tr>
+</table>
+% if ($img_file) {
+%= image $img_file, style => "width:200px;height:200px;"
+% }
+% if ($character_id) {
+<form action="/character/<%= $character_id %>/purchase">
+<input type="hidden" name="character_id">
+<input type="hidden" name="item_id">
+<input type="submit" value="Purchase">
+</form>
+% }
