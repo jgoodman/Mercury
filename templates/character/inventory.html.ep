@@ -9,11 +9,11 @@
     <th>Cost</th>
     <th>Qty</th>
   </tr>
-% for my $item (@$items) {
+% for my $slot ($character->inventory) {
   <tr>
-    <td><%= link_to $item->{'name'} => '/item/' . $item->{'id'} . '?character_id=' . $character_id %></td>
-    <td><%= $item->{'cost'} %></td>
-    <td><%= $item->{'qty'} %></td>
+    <td><%= link_to $slot->item->name => '/item/' . $slot->item->id . '?character_id=' . $character->id %></td>
+    <td><%= $slot->item->cost . ' ' . $slot->item->currency %></td>
+    <td><%= $slot->qty %></td>
   </tr>
 % }
 </table>

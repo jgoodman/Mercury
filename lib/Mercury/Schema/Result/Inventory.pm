@@ -17,4 +17,7 @@ __PACKAGE__->add_columns(
 
 __PACKAGE__->set_primary_key("id");
 
+__PACKAGE__->belongs_to(character => 'Mercury::Schema::Result::Character', 'character_id');
+__PACKAGE__->belongs_to(item      => 'Mercury::Schema::Result::Item',      'item_id');
+
 1;

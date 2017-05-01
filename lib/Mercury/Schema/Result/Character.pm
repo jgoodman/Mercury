@@ -15,4 +15,6 @@ __PACKAGE__->add_columns(
 
 __PACKAGE__->set_primary_key("id");
 
+__PACKAGE__->has_many(inventory => 'Mercury::Schema::Result::Inventory', 'character_id');
+
 1;
