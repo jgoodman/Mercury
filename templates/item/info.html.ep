@@ -1,12 +1,12 @@
 % layout 'default';
 % title 'Welcome';
-<h1><%= $item->{'name'} %></h1>
+<h1><%= $item->name %></h1>
 <table>
   <tr>
     <th>Cost</th>
   </tr>
   <tr>
-    <td><%= $item->{'cost'} %></td>
+    <td><%= $item->cost . ' ' . $item->currency %></td>
   </tr>
 </table>
 % if ($img_file) {

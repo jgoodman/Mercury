@@ -10,8 +10,8 @@
   </tr>
 % for my $item (@$items) {
   <tr>
-    <td><%= link_to $item->{'name'} => '/item/' . $item->{'item_id'} %></td>
-    <td><%= $item->{'cost'} %></td>
+    <td><%= link_to $item->name => '/item/' . $item->id %></td>
+    <td><%= $item->cost . ' ' . $item->currency %></td>
   </tr>
 % }
 </table>
