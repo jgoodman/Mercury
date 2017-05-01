@@ -1,18 +1,26 @@
 package Mercury;
 use Mojo::Base 'Mojolicious';
+use Mercury::Schema;
 
-# This method will run once at server start
+has schema => sub {
+    # TODO: config connect settings
+    return Mercury::Schema->connect('dbi:SQLite:' . ($ENV{TEST_DB} || 'test.db'));
+};
+
 sub startup {
-  my $app = shift;
+  my $self = shift;
 
-  my $config = $app->plugin('Config');
+  $self->helper(db => sub { $self->app->schema });
 
-  my $r = $app->routes;
+  #my $config = $self->plugin('Config');
+
+  my $r = $self->routes;
   $r->get('/')->to('index#home');
   $r->get('/items')->to('item#list');
   $r->get('/item/:item_id')->to('item#info');
   $r->post('/item/:item_id/purchase/character/:character_id')->to('item#purchase');
 
+  $r->get('/character/:character_id')->to('character#info');
   $r->get('/character/:character_id/inventory')->to('character#inventory');
 
   #$r->get('/merchants')->to('merchant#list');

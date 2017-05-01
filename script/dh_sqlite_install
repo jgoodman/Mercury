@@ -1,0 +1,27 @@
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+use aliased 'DBIx::Class::DeploymentHandler' => 'DH';
+use Getopt::Long;
+use FindBin;
+use lib "$FindBin::Bin/../lib";
+use Mercury::Schema;
+
+my $force_overwrite = 0;
+
+unless ( GetOptions( 'force_overwrite!' => \$force_overwrite ) ) {
+    die "Invalid options";
+}
+
+my $s = Mercury::Schema->connect('dbi:SQLite:' . ($ENV{TEST_DB} || 'test.db'));
+my $dh = DH->new({
+    schema              => $s,
+    script_directory    => "$FindBin::Bin/../dbicdh",
+    databases           => 'SQLite',
+    sql_translator_args => { add_drop_table => 0 },
+    force_overwrite     => $force_overwrite,
+});
+
+$dh->prepare_install;
+$dh->install;
