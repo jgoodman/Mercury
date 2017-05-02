@@ -1,4 +1,4 @@
 *.swp
 local
-images
+public/images
 test.db

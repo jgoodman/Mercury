@@ -13,7 +13,7 @@ sub info {
     my $item = ($self->db->resultset('Item')->search({
         id => $self->param('item_id'),
     }))[0];
-    my $status = $item ? 200 : 404;
+    my $status = !$item ? 404 : 200;
     my $img_file = '/images/item/' . $item->id . '.jpg';
 
     my $character_id = $self->param('character_id');

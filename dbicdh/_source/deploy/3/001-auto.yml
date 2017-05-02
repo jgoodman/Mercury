@@ -38,6 +38,16 @@ schema:
           order: 2
           size:
             - 0
+        purse:
+          data_type: integer
+          default_value: ~
+          is_nullable: 0
+          is_primary_key: 0
+          is_unique: 0
+          name: purse
+          order: 3
+          size:
+            - 0
       indices: []
       name: character
       options: []
@@ -56,6 +66,32 @@ schema:
           reference_fields: []
           reference_table: ''
           type: PRIMARY KEY
+        - deferrable: 1
+          expression: ''
+          fields:
+            - character_id
+          match_type: ''
+          name: inventory_fk_character_id
+          on_delete: CASCADE
+          on_update: CASCADE
+          options: []
+          reference_fields:
+            - id
+          reference_table: character
+          type: FOREIGN KEY
+        - deferrable: 1
+          expression: ''
+          fields:
+            - item_id
+          match_type: ''
+          name: inventory_fk_item_id
+          on_delete: ''
+          on_update: ''
+          options: []
+          reference_fields:
+            - id
+          reference_table: item
+          type: FOREIGN KEY
       fields:
         character_id:
           data_type: integer
@@ -98,10 +134,20 @@ schema:
           order: 4
           size:
             - 0
-      indices: []
+      indices:
+        - fields:
+            - character_id
+          name: inventory_idx_character_id
+          options: []
+          type: NORMAL
+        - fields:
+            - item_id
+          name: inventory_idx_item_id
+          options: []
+          type: NORMAL
       name: inventory
       options: []
-      order: 2
+      order: 4
     item:
       constraints:
         - deferrable: 1
@@ -120,21 +166,31 @@ schema:
         cost:
           data_type: integer
           default_value: ~
-          is_nullable: 0
+          is_nullable: 1
           is_primary_key: 0
           is_unique: 0
           name: cost
-          order: 3
+          order: 4
           size:
             - 0
         currency:
           data_type: varchar
           default_value: ~
-          is_nullable: 0
+          is_nullable: 1
           is_primary_key: 0
           is_unique: 0
           name: currency
-          order: 4
+          order: 5
+          size:
+            - 0
+        desc:
+          data_type: varchar
+          default_value: ~
+          is_nullable: 1
+          is_primary_key: 0
+          is_unique: 0
+          name: desc
+          order: 7
           size:
             - 0
         id:
@@ -155,11 +211,109 @@ schema:
           is_primary_key: 0
           is_unique: 0
           name: name
+          order: 3
+          size:
+            - 0
+        type:
+          data_type: varchar
+          default_value: ~
+          is_nullable: 1
+          is_primary_key: 0
+          is_unique: 0
+          name: type
           order: 2
+          size:
+            - 0
+        weight:
+          data_type: varchar
+          default_value: ~
+          is_nullable: 1
+          is_primary_key: 0
+          is_unique: 0
+          name: weight
+          order: 6
           size:
             - 0
       indices: []
       name: item
+      options: []
+      order: 2
+    item_meta:
+      constraints:
+        - deferrable: 1
+          expression: ''
+          fields:
+            - id
+          match_type: ''
+          name: ''
+          on_delete: ''
+          on_update: ''
+          options: []
+          reference_fields: []
+          reference_table: ''
+          type: PRIMARY KEY
+        - deferrable: 1
+          expression: ''
+          fields:
+            - item_id
+          match_type: ''
+          name: item_meta_fk_item_id
+          on_delete: CASCADE
+          on_update: CASCADE
+          options: []
+          reference_fields:
+            - id
+          reference_table: item
+          type: FOREIGN KEY
+      fields:
+        id:
+          data_type: integer
+          default_value: ~
+          is_auto_increment: 1
+          is_nullable: 0
+          is_primary_key: 1
+          is_unique: 0
+          name: id
+          order: 1
+          size:
+            - 0
+        item_id:
+          data_type: integer
+          default_value: ~
+          is_nullable: 0
+          is_primary_key: 0
+          is_unique: 0
+          name: item_id
+          order: 2
+          size:
+            - 0
+        name:
+          data_type: varchar
+          default_value: ~
+          is_nullable: 0
+          is_primary_key: 0
+          is_unique: 0
+          name: name
+          order: 3
+          size:
+            - 0
+        value:
+          data_type: varchar
+          default_value: ~
+          is_nullable: 0
+          is_primary_key: 0
+          is_unique: 0
+          name: value
+          order: 4
+          size:
+            - 0
+      indices:
+        - fields:
+            - item_id
+          name: item_meta_idx_item_id
+          options: []
+          type: NORMAL
+      name: item_meta
       options: []
       order: 3
   triggers: {}
@@ -173,6 +327,7 @@ translator:
       - Character
       - Inventory
       - Item
+      - ItemMeta
   parser_type: SQL::Translator::Parser::DBIx::Class
   producer_args: {}
   producer_type: SQL::Translator::Producer::YAML
