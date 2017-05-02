@@ -17,22 +17,26 @@ my @catagories = (
     weapons => {
         id      => 'table-6-4-weapons',
         columns => [
-            "cost", "dmg_(s)", "dmg_(m)", "critical", "range", "weight", "damage_type", "special"
+            "cost", "dmg (s)", "dmg (m)", "critical", "range", "weight", "damage type", "special"
         ],
-        types   => [ qw(Simple Martial Exotic) ],
+        types   => [ qw(simple martial exotic) ],
     },
     armor   => {
         id    => 'table-6-6-armor-and-shields',
         columns => [
-            "cost", "armor/shield bonus", "maximum_dex_bonus", "armor_check_penalty",
-            "arcane_spell_failure_chance", "speed-30ft", "speed-20ft", "weight"
+            "cost", "armor/shield bonus", "maximum dex bonus", "armor check penalty",
+            "arcane spell failure chance", "speed-30ft", "speed-20ft", "weight"
         ],
         types => [ '' ],
     },
     goods_and_services => {
         id      => 'table-6-9-goods-and-services',
-        columns => [ qw(name cost weight) ],
-        types   => [ '' ]
+        columns => [ qw(cost weight) ],
+        types   => [
+            'adventuring gear', 'special substances and items',
+            'tools and skill kits', 'clothing', 'food and drink and lodging',
+            'mounts and related gear', 'transport', 'spellcasting and services'
+        ]
     },
 );
 

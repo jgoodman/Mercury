@@ -1,0 +1,1532 @@
+[
+  {
+    "category" => "goods_and_services",
+    "cost" => 2,
+    "currency" => "gp",
+    "name" => "Backpack (empty)",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "adventuring gear",
+    "weight" => "2 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 2,
+    "currency" => "gp",
+    "name" => "Barrel (empty)",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "adventuring gear",
+    "weight" => "30 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 4,
+    "currency" => "sp",
+    "name" => "Basket (empty)",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "adventuring gear",
+    "weight" => "1 lb."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 1,
+    "currency" => "sp",
+    "name" => "Bedroll",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "adventuring gear",
+    "weight" => "5 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 1,
+    "currency" => "gp",
+    "name" => "Bell",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "adventuring gear",
+    "weight" => undef
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 5,
+    "currency" => "sp",
+    "name" => "Blanket, winter",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "adventuring gear",
+    "weight" => "3 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 5,
+    "currency" => "gp",
+    "name" => "Block and tackle",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "adventuring gear",
+    "weight" => "5 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 2,
+    "currency" => "gp",
+    "name" => "Bottle, glass",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "adventuring gear",
+    "weight" => "1 lb."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 5,
+    "currency" => "sp",
+    "name" => "Bucket (empty)",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "adventuring gear",
+    "weight" => "2 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 1,
+    "currency" => "gp",
+    "name" => "Caltrops",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "adventuring gear",
+    "weight" => "2 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 1,
+    "currency" => "cp",
+    "name" => "Candle",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "adventuring gear",
+    "weight" => undef
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 1,
+    "currency" => "sp",
+    "name" => "Canvas (sq. yd.)",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "adventuring gear",
+    "weight" => "1 lb."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 1,
+    "currency" => "gp",
+    "name" => "Case, map or scroll",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "adventuring gear",
+    "weight" => "1/2 lb."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 30,
+    "currency" => "gp",
+    "name" => "Chain (10 ft.)",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "adventuring gear",
+    "weight" => "2 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 1,
+    "currency" => "cp",
+    "name" => "Chalk, 1 piece",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "adventuring gear",
+    "weight" => undef
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 2,
+    "currency" => "gp",
+    "name" => "Chest (empty)",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "adventuring gear",
+    "weight" => "25 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 2,
+    "currency" => "gp",
+    "name" => "Crowbar",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "adventuring gear",
+    "weight" => "5 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 1,
+    "currency" => "cp",
+    "name" => "Firewood (per day)",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "adventuring gear",
+    "weight" => "20 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 1,
+    "currency" => "sp",
+    "name" => "Fishhook",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "adventuring gear",
+    "weight" => undef
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 4,
+    "currency" => "gp",
+    "name" => "Fishing net, 25 sq. ft.",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "adventuring gear",
+    "weight" => "5 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 3,
+    "currency" => "cp",
+    "name" => "Flask (empty)",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "adventuring gear",
+    "weight" => "1-1/2 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 1,
+    "currency" => "gp",
+    "name" => "Flint and steel",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "adventuring gear",
+    "weight" => undef
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 1,
+    "currency" => "gp",
+    "name" => "Grappling hook",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "adventuring gear",
+    "weight" => "4 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 5,
+    "currency" => "sp",
+    "name" => "Hammer",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "adventuring gear",
+    "weight" => "2 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 25,
+    "currency" => "gp",
+    "name" => "Hourglass",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "adventuring gear",
+    "weight" => "1 lb."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 8,
+    "currency" => "gp",
+    "name" => "Ink (1 oz. vial)",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "adventuring gear",
+    "weight" => undef
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 1,
+    "currency" => "sp",
+    "name" => "Inkpen",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "adventuring gear",
+    "weight" => undef
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 3,
+    "currency" => "cp",
+    "name" => "Jug, clay",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "adventuring gear",
+    "weight" => "9 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 2,
+    "currency" => "sp",
+    "name" => "Ladder, 10-foot",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "adventuring gear",
+    "weight" => "20 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 1,
+    "currency" => "sp",
+    "name" => "Lamp, common",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "adventuring gear",
+    "weight" => "1 lb."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 12,
+    "currency" => "gp",
+    "name" => "Lantern, bullseye",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "adventuring gear",
+    "weight" => "3 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 7,
+    "currency" => "gp",
+    "name" => "Lantern, hooded",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "adventuring gear",
+    "weight" => "2 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 20,
+    "currency" => "gp",
+    "name" => "Simple",
+    "source_id" => 1,
+    "subtype" => "lock",
+    "type" => "adventuring gear",
+    "weight" => "1 lb."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 40,
+    "currency" => "gp",
+    "name" => "Average",
+    "source_id" => 1,
+    "subtype" => "lock",
+    "type" => "adventuring gear",
+    "weight" => "1 lb."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 80,
+    "currency" => "gp",
+    "name" => "Good",
+    "source_id" => 1,
+    "subtype" => "lock",
+    "type" => "adventuring gear",
+    "weight" => "1 lb."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 150,
+    "currency" => "gp",
+    "name" => "Superior",
+    "source_id" => 1,
+    "subtype" => "lock",
+    "type" => "adventuring gear",
+    "weight" => "1 lb."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 15,
+    "currency" => "gp",
+    "name" => "Manacles",
+    "source_id" => 1,
+    "subtype" => "lock",
+    "type" => "adventuring gear",
+    "weight" => "2 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 50,
+    "currency" => "gp",
+    "name" => "Manacles, masterwork",
+    "source_id" => 1,
+    "subtype" => "lock",
+    "type" => "adventuring gear",
+    "weight" => "2 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 10,
+    "currency" => "gp",
+    "name" => "Mirror, small steel",
+    "source_id" => 1,
+    "subtype" => "lock",
+    "type" => "adventuring gear",
+    "weight" => "1/2 lb."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 2,
+    "currency" => "cp",
+    "name" => "Mug/Tankard, clay",
+    "source_id" => 1,
+    "subtype" => "lock",
+    "type" => "adventuring gear",
+    "weight" => "1 lb."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 1,
+    "currency" => "sp",
+    "name" => "Oil (1-pint flask)",
+    "source_id" => 1,
+    "subtype" => "lock",
+    "type" => "adventuring gear",
+    "weight" => "1 lb."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 4,
+    "currency" => "sp",
+    "name" => "Paper (sheet)",
+    "source_id" => 1,
+    "subtype" => "lock",
+    "type" => "adventuring gear",
+    "weight" => undef
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 2,
+    "currency" => "sp",
+    "name" => "Parchment (sheet)",
+    "source_id" => 1,
+    "subtype" => "lock",
+    "type" => "adventuring gear",
+    "weight" => undef
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 3,
+    "currency" => "gp",
+    "name" => "Pick, miner&#39;s",
+    "source_id" => 1,
+    "subtype" => "lock",
+    "type" => "adventuring gear",
+    "weight" => "10 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 2,
+    "currency" => "cp",
+    "name" => "Pitcher, clay",
+    "source_id" => 1,
+    "subtype" => "lock",
+    "type" => "adventuring gear",
+    "weight" => "5 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 1,
+    "currency" => "sp",
+    "name" => "Piton",
+    "source_id" => 1,
+    "subtype" => "lock",
+    "type" => "adventuring gear",
+    "weight" => "1/2 lb."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 5,
+    "currency" => "cp",
+    "name" => "Pole, 10-foot",
+    "source_id" => 1,
+    "subtype" => "lock",
+    "type" => "adventuring gear",
+    "weight" => "8 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 8,
+    "currency" => "sp",
+    "name" => "Pot, iron",
+    "source_id" => 1,
+    "subtype" => "lock",
+    "type" => "adventuring gear",
+    "weight" => "4 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 1,
+    "currency" => "gp",
+    "name" => "Pouch, belt (empty)",
+    "source_id" => 1,
+    "subtype" => "lock",
+    "type" => "adventuring gear",
+    "weight" => "1/2 lb."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 10,
+    "currency" => "gp",
+    "name" => "Ram, portable",
+    "source_id" => 1,
+    "subtype" => "lock",
+    "type" => "adventuring gear",
+    "weight" => "20 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 5,
+    "currency" => "sp",
+    "name" => "Rations, trail (per day)",
+    "source_id" => 1,
+    "subtype" => "lock",
+    "type" => "adventuring gear",
+    "weight" => "1 lb."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 1,
+    "currency" => "gp",
+    "name" => "Rope, hemp (50 ft.)",
+    "source_id" => 1,
+    "subtype" => "lock",
+    "type" => "adventuring gear",
+    "weight" => "10 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 10,
+    "currency" => "gp",
+    "name" => "Rope, silk (50 ft.)",
+    "source_id" => 1,
+    "subtype" => "lock",
+    "type" => "adventuring gear",
+    "weight" => "5 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 1,
+    "currency" => "sp",
+    "name" => "Sack (empty)",
+    "source_id" => 1,
+    "subtype" => "lock",
+    "type" => "adventuring gear",
+    "weight" => "1/2 lb."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 1,
+    "currency" => "gp",
+    "name" => "Sealing wax",
+    "source_id" => 1,
+    "subtype" => "lock",
+    "type" => "adventuring gear",
+    "weight" => "1 lb."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 5,
+    "currency" => "sp",
+    "name" => "Sewing needle",
+    "source_id" => 1,
+    "subtype" => "lock",
+    "type" => "adventuring gear",
+    "weight" => undef
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 2,
+    "currency" => "gp",
+    "name" => "Shovel or spade",
+    "source_id" => 1,
+    "subtype" => "lock",
+    "type" => "adventuring gear",
+    "weight" => "8 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 8,
+    "currency" => "sp",
+    "name" => "Signal whistle",
+    "source_id" => 1,
+    "subtype" => "lock",
+    "type" => "adventuring gear",
+    "weight" => undef
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 5,
+    "currency" => "gp",
+    "name" => "Signet ring",
+    "source_id" => 1,
+    "subtype" => "lock",
+    "type" => "adventuring gear",
+    "weight" => undef
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 1,
+    "currency" => "gp",
+    "name" => "Sledge",
+    "source_id" => 1,
+    "subtype" => "lock",
+    "type" => "adventuring gear",
+    "weight" => "10 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 5,
+    "currency" => "sp",
+    "name" => "Soap (per lb.)",
+    "source_id" => 1,
+    "subtype" => "lock",
+    "type" => "adventuring gear",
+    "weight" => "1 lb."
+  },
+  {
+    "category" => "goods_and_services",
+    "currency" => "1,000",
+    "name" => "Spyglass",
+    "source_id" => 1,
+    "subtype" => "lock",
+    "type" => "adventuring gear",
+    "weight" => "1 lb."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 10,
+    "currency" => "gp",
+    "name" => "Tent",
+    "source_id" => 1,
+    "subtype" => "lock",
+    "type" => "adventuring gear",
+    "weight" => "20 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 1,
+    "currency" => "cp",
+    "name" => "Torch",
+    "source_id" => 1,
+    "subtype" => "lock",
+    "type" => "adventuring gear",
+    "weight" => "1 lb."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 1,
+    "currency" => "gp",
+    "name" => "Vial, ink or potion",
+    "source_id" => 1,
+    "subtype" => "lock",
+    "type" => "adventuring gear",
+    "weight" => undef
+  },
+  {
+    "category" => "goods_and_services",
+    "currency" => "1,000",
+    "name" => "Water clock",
+    "source_id" => 1,
+    "subtype" => "lock",
+    "type" => "adventuring gear",
+    "weight" => "200 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 1,
+    "currency" => "gp",
+    "name" => "Waterskin",
+    "source_id" => 1,
+    "subtype" => "lock",
+    "type" => "adventuring gear",
+    "weight" => "4 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 2,
+    "currency" => "cp",
+    "name" => "Whetstone",
+    "source_id" => 1,
+    "subtype" => "lock",
+    "type" => "adventuring gear",
+    "weight" => "1 lb."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 10,
+    "currency" => "gp",
+    "name" => "Acid (flask)",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "special substances and items",
+    "weight" => "1 lb."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 20,
+    "currency" => "gp",
+    "name" => "Alchemist&#39;s fire (flask)",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "special substances and items",
+    "weight" => "1 lb."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 50,
+    "currency" => "gp",
+    "name" => "Antitoxin (vial)",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "special substances and items",
+    "weight" => undef
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 110,
+    "currency" => "gp",
+    "name" => "Everburning torch",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "special substances and items",
+    "weight" => "1 lb."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 25,
+    "currency" => "gp",
+    "name" => "Holy water (flask)",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "special substances and items",
+    "weight" => "1 lb."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 20,
+    "currency" => "gp",
+    "name" => "Smokestick",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "special substances and items",
+    "weight" => "1/2 lb."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 2,
+    "currency" => "gp",
+    "name" => "Sunrod",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "special substances and items",
+    "weight" => "1 lb."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 50,
+    "currency" => "gp",
+    "name" => "Tanglefoot bag",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "special substances and items",
+    "weight" => "4 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 30,
+    "currency" => "gp",
+    "name" => "Thunderstone",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "special substances and items",
+    "weight" => "1 lb."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 1,
+    "currency" => "gp",
+    "name" => "Tindertwig",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "special substances and items",
+    "weight" => undef
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 200,
+    "currency" => "gp",
+    "name" => "Alchemist&#39;s lab",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "tools and skill kits",
+    "weight" => "40 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 5,
+    "currency" => "gp",
+    "name" => "Artisan&#39;s tools",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "tools and skill kits",
+    "weight" => "5 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 55,
+    "currency" => "gp",
+    "name" => "Artisan&#39;s tools, masterwork",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "tools and skill kits",
+    "weight" => "5 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 80,
+    "currency" => "gp",
+    "name" => "Climber&#39;s kit",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "tools and skill kits",
+    "weight" => "5 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 50,
+    "currency" => "gp",
+    "name" => "Disguise kit",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "tools and skill kits",
+    "weight" => "8 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 50,
+    "currency" => "gp",
+    "name" => "Healer&#39;s kit",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "tools and skill kits",
+    "weight" => "1 lb."
+  },
+  {
+    "category" => "goods_and_services",
+    "currency" => undef,
+    "name" => "Holly and mistletoe",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "tools and skill kits",
+    "weight" => undef
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 1,
+    "currency" => "gp",
+    "name" => "Holy symbol, wooden",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "tools and skill kits",
+    "weight" => undef
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 25,
+    "currency" => "gp",
+    "name" => "Holy symbol, silver",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "tools and skill kits",
+    "weight" => "1 lb."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 100,
+    "currency" => "gp",
+    "name" => "Magnifying glass",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "tools and skill kits",
+    "weight" => undef
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 5,
+    "currency" => "gp",
+    "name" => "Musical instrument, common",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "tools and skill kits",
+    "weight" => "3 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 100,
+    "currency" => "gp",
+    "name" => "Musical instrument, masterwork",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "tools and skill kits",
+    "weight" => "3 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 2,
+    "currency" => "gp",
+    "name" => "Scale, merchant&#39;s",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "tools and skill kits",
+    "weight" => "1 lb."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 5,
+    "currency" => "gp",
+    "name" => "Spell component pouch",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "tools and skill kits",
+    "weight" => "2 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 15,
+    "currency" => "gp",
+    "name" => "Spellbook, wizard&#39;s (blank)",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "tools and skill kits",
+    "weight" => "3 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 30,
+    "currency" => "gp",
+    "name" => "Thieves&#39; tools",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "tools and skill kits",
+    "weight" => "1 lb."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 100,
+    "currency" => "gp",
+    "name" => "Thieves&#39; tools, masterwork",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "tools and skill kits",
+    "weight" => "2 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 50,
+    "currency" => "gp",
+    "name" => "Tool, masterwork",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "tools and skill kits",
+    "weight" => "1 lb."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 1,
+    "currency" => "gp",
+    "name" => "Artisan&#39;s outfit",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "clothing",
+    "weight" => "4 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 5,
+    "currency" => "gp",
+    "name" => "Cleric&#39;s vestments",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "clothing",
+    "weight" => "6 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 8,
+    "currency" => "gp",
+    "name" => "Cold-weather outfit",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "clothing",
+    "weight" => "7 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 30,
+    "currency" => "gp",
+    "name" => "Courtier&#39;s outfit",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "clothing",
+    "weight" => "6 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 3,
+    "currency" => "gp",
+    "name" => "Entertainer&#39;s outfit",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "clothing",
+    "weight" => "4 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 10,
+    "currency" => "gp",
+    "name" => "Explorer&#39;s outfit",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "clothing",
+    "weight" => "8 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 5,
+    "currency" => "gp",
+    "name" => "Monk&#39;s outfit",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "clothing",
+    "weight" => "2 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 75,
+    "currency" => "gp",
+    "name" => "Noble&#39;s outfit",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "clothing",
+    "weight" => "10 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 1,
+    "currency" => "sp",
+    "name" => "Peasant&#39;s outfit",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "clothing",
+    "weight" => "2 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 200,
+    "currency" => "gp",
+    "name" => "Royal outfit",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "clothing",
+    "weight" => "15 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 5,
+    "currency" => "gp",
+    "name" => "Scholar&#39;s outfit",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "clothing",
+    "weight" => "6 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 1,
+    "currency" => "gp",
+    "name" => "Traveler&#39;s outfit",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "clothing",
+    "weight" => "5 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 2,
+    "currency" => "sp",
+    "name" => "Gallon",
+    "source_id" => 1,
+    "subtype" => "ale",
+    "type" => "food and drink and lodging",
+    "weight" => "8 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 4,
+    "currency" => "cp",
+    "name" => "Mug",
+    "source_id" => 1,
+    "subtype" => "ale",
+    "type" => "food and drink and lodging",
+    "weight" => "1 lb."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 10,
+    "currency" => "gp",
+    "name" => "Banquet (per person)",
+    "source_id" => 1,
+    "subtype" => "ale",
+    "type" => "food and drink and lodging",
+    "weight" => undef
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 2,
+    "currency" => "cp",
+    "name" => "Bread, loaf of",
+    "source_id" => 1,
+    "subtype" => "ale",
+    "type" => "food and drink and lodging",
+    "weight" => "1/2 lb."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 1,
+    "currency" => "sp",
+    "name" => "Cheese, hunk of",
+    "source_id" => 1,
+    "subtype" => "ale",
+    "type" => "food and drink and lodging",
+    "weight" => "1/2 lb."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 2,
+    "currency" => "gp",
+    "name" => "Good",
+    "source_id" => 1,
+    "subtype" => "inn stay (per day)",
+    "type" => "food and drink and lodging",
+    "weight" => undef
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 5,
+    "currency" => "sp",
+    "name" => "Common",
+    "source_id" => 1,
+    "subtype" => "inn stay (per day)",
+    "type" => "food and drink and lodging",
+    "weight" => undef
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 2,
+    "currency" => "sp",
+    "name" => "Poor",
+    "source_id" => 1,
+    "subtype" => "inn stay (per day)",
+    "type" => "food and drink and lodging",
+    "weight" => undef
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 5,
+    "currency" => "sp",
+    "name" => "Good",
+    "source_id" => 1,
+    "subtype" => "meals (per day)",
+    "type" => "food and drink and lodging",
+    "weight" => undef
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 3,
+    "currency" => "sp",
+    "name" => "Common",
+    "source_id" => 1,
+    "subtype" => "meals (per day)",
+    "type" => "food and drink and lodging",
+    "weight" => undef
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 1,
+    "currency" => "sp",
+    "name" => "Poor",
+    "source_id" => 1,
+    "subtype" => "meals (per day)",
+    "type" => "food and drink and lodging",
+    "weight" => undef
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 3,
+    "currency" => "sp",
+    "name" => "Meat, chunk of",
+    "source_id" => 1,
+    "subtype" => "meals (per day)",
+    "type" => "food and drink and lodging",
+    "weight" => "1/2 lb."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 2,
+    "currency" => "sp",
+    "name" => "Common (pitcher)",
+    "source_id" => 1,
+    "subtype" => "wine",
+    "type" => "food and drink and lodging",
+    "weight" => "6 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 10,
+    "currency" => "gp",
+    "name" => "Fine (bottle)",
+    "source_id" => 1,
+    "subtype" => "wine",
+    "type" => "food and drink and lodging",
+    "weight" => "1-1/2 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "currency" => "x2",
+    "name" => "Medium creature",
+    "source_id" => 1,
+    "subtype" => "barding",
+    "type" => "mounts and related gear",
+    "weight" => "x1"
+  },
+  {
+    "category" => "goods_and_services",
+    "currency" => "x4",
+    "name" => "Large creature",
+    "source_id" => 1,
+    "subtype" => "barding",
+    "type" => "mounts and related gear",
+    "weight" => "x2"
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 2,
+    "currency" => "gp",
+    "name" => "Bit and bridle",
+    "source_id" => 1,
+    "subtype" => "barding",
+    "type" => "mounts and related gear",
+    "weight" => "1 lb."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 25,
+    "currency" => "gp",
+    "name" => "Dog, guard",
+    "source_id" => 1,
+    "subtype" => "barding",
+    "type" => "mounts and related gear",
+    "weight" => undef
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 150,
+    "currency" => "gp",
+    "name" => "Dog, riding",
+    "source_id" => 1,
+    "subtype" => "barding",
+    "type" => "mounts and related gear",
+    "weight" => undef
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 8,
+    "currency" => "gp",
+    "name" => "Donkey or mule",
+    "source_id" => 1,
+    "subtype" => "barding",
+    "type" => "mounts and related gear",
+    "weight" => undef
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 5,
+    "currency" => "cp",
+    "name" => "Feed (per day)",
+    "source_id" => 1,
+    "subtype" => "barding",
+    "type" => "mounts and related gear",
+    "weight" => "10 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 200,
+    "currency" => "gp",
+    "name" => "Horse, heavy",
+    "source_id" => 1,
+    "subtype" => "horse",
+    "type" => "mounts and related gear",
+    "weight" => undef
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 300,
+    "currency" => "gp",
+    "name" => "<nobr>Horse, heavy</nobr> <nobr>(combat trained)</nobr>",
+    "source_id" => 1,
+    "subtype" => "horse",
+    "type" => "mounts and related gear",
+    "weight" => undef
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 75,
+    "currency" => "gp",
+    "name" => "Horse, light",
+    "source_id" => 1,
+    "subtype" => "horse",
+    "type" => "mounts and related gear",
+    "weight" => undef
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 110,
+    "currency" => "gp",
+    "name" => "<nobr>Horse, light</nobr><nobr>(combat trained)</nobr>",
+    "source_id" => 1,
+    "subtype" => "horse",
+    "type" => "mounts and related gear",
+    "weight" => undef
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 30,
+    "currency" => "gp",
+    "name" => "Pony",
+    "source_id" => 1,
+    "subtype" => "horse",
+    "type" => "mounts and related gear",
+    "weight" => undef
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 45,
+    "currency" => "gp",
+    "name" => "Pony (combat trained)",
+    "source_id" => 1,
+    "subtype" => "horse",
+    "type" => "mounts and related gear",
+    "weight" => undef
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 20,
+    "currency" => "gp",
+    "name" => "Military",
+    "source_id" => 1,
+    "subtype" => "saddle",
+    "type" => "mounts and related gear",
+    "weight" => "30 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 5,
+    "currency" => "gp",
+    "name" => "Pack",
+    "source_id" => 1,
+    "subtype" => "saddle",
+    "type" => "mounts and related gear",
+    "weight" => "15 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 10,
+    "currency" => "gp",
+    "name" => "Riding",
+    "source_id" => 1,
+    "subtype" => "saddle",
+    "type" => "mounts and related gear",
+    "weight" => "25 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 60,
+    "currency" => "gp",
+    "name" => "Military",
+    "source_id" => 1,
+    "subtype" => "saddle, exotic",
+    "type" => "mounts and related gear",
+    "weight" => "40 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 15,
+    "currency" => "gp",
+    "name" => "Pack",
+    "source_id" => 1,
+    "subtype" => "saddle, exotic",
+    "type" => "mounts and related gear",
+    "weight" => "20 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 30,
+    "currency" => "gp",
+    "name" => "Riding",
+    "source_id" => 1,
+    "subtype" => "saddle, exotic",
+    "type" => "mounts and related gear",
+    "weight" => "30 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 4,
+    "currency" => "gp",
+    "name" => "Saddlebags",
+    "source_id" => 1,
+    "subtype" => "saddle, exotic",
+    "type" => "mounts and related gear",
+    "weight" => "8 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 5,
+    "currency" => "sp",
+    "name" => "Stabling (per day)",
+    "source_id" => 1,
+    "subtype" => "saddle, exotic",
+    "type" => "mounts and related gear",
+    "weight" => undef
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 100,
+    "currency" => "gp",
+    "name" => "Carriage",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "transport",
+    "weight" => "600 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 15,
+    "currency" => "gp",
+    "name" => "Cart",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "transport",
+    "weight" => "200 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "currency" => "30,000",
+    "name" => "Galley",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "transport",
+    "weight" => undef
+  },
+  {
+    "category" => "goods_and_services",
+    "currency" => "3,000",
+    "name" => "Keelboat",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "transport",
+    "weight" => undef
+  },
+  {
+    "category" => "goods_and_services",
+    "currency" => "10,000",
+    "name" => "Longship",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "transport",
+    "weight" => undef
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 50,
+    "currency" => "gp",
+    "name" => "Rowboat",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "transport",
+    "weight" => "100 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 2,
+    "currency" => "gp",
+    "name" => "Oar",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "transport",
+    "weight" => "10 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "currency" => "10,000",
+    "name" => "Sailing ship",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "transport",
+    "weight" => undef
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 20,
+    "currency" => "gp",
+    "name" => "Sled",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "transport",
+    "weight" => "300 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "cost" => 35,
+    "currency" => "gp",
+    "name" => "Wagon",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "transport",
+    "weight" => "400 lbs."
+  },
+  {
+    "category" => "goods_and_services",
+    "currency" => "25,000",
+    "name" => "Warship",
+    "source_id" => 1,
+    "subtype" => "",
+    "type" => "transport",
+    "weight" => undef
+  }
+]

@@ -37,14 +37,19 @@ sub _data_file {
 
 sub import_data {
     my $self     = shift;
-    my $category = shift;
 
+    print '['._clean($self->category)."] Importing data \n";
     foreach my $hash (@{ require($self->_data_file)} ) {
         $hash->{'source_id'} ||= $self->source->id;
         $hash->{'category'}  ||= $self->category;
-        print dumper $hash;
-        #$s->resultset('Item')->find_or_create($hash);
+
+        print ' -> '
+              . join(', ', map { "$_:"._clean($hash->{$_}) } sort(keys(%$hash)))
+              . "\n";
+
+        $self->schema->resultset('Item')->find_or_create($hash);
     }
+    print "\n";
 
     return $self;
 }
@@ -70,6 +75,8 @@ sub _parse_table {
     my $id       = $self->scrape_opts->{id};
     my @types    = @{$self->scrape_opts->{types}};
 
+    print '['._clean($category)."] Parsing HTML - table#$id tbody\n";
+
     foreach my $group (
         $self->_dom->find("table#$id tbody")
             ->map(sub {
@@ -81,9 +88,12 @@ sub _parse_table {
         my $type = shift(@types) // die('Out of types');
         my $subtype;
 
+        print ' -> ['.join(':',map { _clean($_) } ($category,$type))."] Processing individual type\n";
+
         foreach my $values (@$group) {
             if(scalar(@$values) == 1) {
                 ($subtype = $values->[0]) =~ s|</?i>||g;
+                print ' -> ['.join(':',map { _clean($_) } ($category,$type,$subtype))."] Setting subtype\n";
                 next;
             }
 
@@ -107,7 +117,9 @@ sub _parse_table {
                 if($key =~ m/cost|weight/) {
                     $item{$key} = $value;
                     if($key eq 'cost') {
-                        ($item{'cost'}, $item{'currency'}) = split(" ", $item{cost} // '');
+                        my @remainder;
+                        ($item{'cost'}, $item{'currency'}, @remainder) = split(" ", ($item{cost} // ''));
+                        $item{'currency'} .= join(' ', @remainder);
                         $item{'currency'} = delete $item{'cost'} if ($item{'cost'} // '') !~ m/^\+?\d+$/;
                     }
                 }
@@ -123,11 +135,18 @@ sub _parse_table {
                 $item{$k} =~ s{(\S)\s*$}{$1};
             }
 
+            print ' -->> '
+                  . join(', ', map { "$_:"._clean($item{$_}) } sort(keys(%item)))
+                  . "\n";
             push @rows, \%item;
         }
+    print "\n";
     }
+    print "\n";
     Mojo::File->new($self->_data_file)->spurt(dumper(\@rows));
 }
+
+sub _clean { my $v = shift; defined $v ? ('"'.$v.'"') : '(undef)' }
 
 sub _columns {
     my $self = shift;
