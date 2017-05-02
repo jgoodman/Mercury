@@ -1,0 +1,49 @@
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+
+use FindBin qw($Bin);
+use lib $Bin;
+use ItemScrape;
+
+my @catagories = (
+    trade_goods => {
+        skip    => 1,
+        id      => 'table-6-3-trade-goods',
+        columns => [ qw(cost name) ],
+        types   => [ '' ]
+    },
+    weapons => {
+        id      => 'table-6-4-weapons',
+        columns => [
+            "cost", "dmg_(s)", "dmg_(m)", "critical", "range", "weight", "damage_type", "special"
+        ],
+        types   => [ qw(Simple Martial Exotic) ],
+    },
+    armor   => {
+        id    => 'table-6-6-armor-and-shields',
+        columns => [
+            "cost", "armor/shield bonus", "maximum_dex_bonus", "armor_check_penalty",
+            "arcane_spell_failure_chance", "speed-30ft", "speed-20ft", "weight"
+        ],
+        types => [ '' ],
+    },
+    goods_and_services => {
+        id      => 'table-6-9-goods-and-services',
+        columns => [ qw(name cost weight) ],
+        types   => [ '' ]
+    },
+);
+
+while(my $category = shift(@catagories)) {
+    ItemScrape->new({
+        src         => 'http://paizo.com/pathfinderRPG/prd/coreRulebook/equipment.html',
+        space       => 'core',
+        category    => $category,
+        scrape_opts => shift(@catagories) || die 'Odd number of elements',
+    })
+    ->scrape_html
+    ->import_data;
+}
+

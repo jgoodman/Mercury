@@ -1,6 +1,6 @@
 -- 
 -- Created by SQL::Translator::Producer::SQLite
--- Created on Mon May  1 19:06:52 2017
+-- Created on Tue May  2 08:57:38 2017
 -- 
 
 ;
@@ -14,17 +14,30 @@ CREATE TABLE character (
   purse integer NOT NULL
 );
 --
+-- Table: source
+--
+CREATE TABLE source (
+  id INTEGER PRIMARY KEY NOT NULL,
+  type varchar,
+  name varchar NOT NULL
+);
+--
 -- Table: item
 --
 CREATE TABLE item (
   id INTEGER PRIMARY KEY NOT NULL,
-  type varchar,
   name varchar NOT NULL,
-  cost integer,
+  category varchar,
+  type varchar,
+  subtype varchar,
+  cost varchar,
   currency varchar,
   weight varchar,
-  desc varchar
+  desc varchar,
+  source_id integer,
+  FOREIGN KEY (source_id) REFERENCES source(id)
 );
+CREATE INDEX item_idx_source_id ON item (source_id);
 --
 -- Table: item_meta
 --

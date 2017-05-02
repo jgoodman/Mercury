@@ -1,0 +1,803 @@
+[
+  {
+    "category" => "weapons",
+    "cost" => 2,
+    "currency" => "gp",
+    "name" => "Gauntlet",
+    "source_id" => 1,
+    "subtype" => "unarmed attacks",
+    "type" => "simple",
+    "weight" => "1 lb."
+  },
+  {
+    "category" => "weapons",
+    "currency" => undef,
+    "name" => "Unarmed strike",
+    "source_id" => 1,
+    "subtype" => "unarmed attacks",
+    "type" => "simple",
+    "weight" => undef
+  },
+  {
+    "category" => "weapons",
+    "cost" => 2,
+    "currency" => "gp",
+    "name" => "Dagger",
+    "source_id" => 1,
+    "subtype" => "light melee",
+    "type" => "simple",
+    "weight" => "1 lb."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 2,
+    "currency" => "gp",
+    "name" => "Dagger, punching",
+    "source_id" => 1,
+    "subtype" => "light melee",
+    "type" => "simple",
+    "weight" => "1 lb."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 5,
+    "currency" => "gp",
+    "name" => "Gauntlet, spiked",
+    "source_id" => 1,
+    "subtype" => "light melee",
+    "type" => "simple",
+    "weight" => "1 lb."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 5,
+    "currency" => "gp",
+    "name" => "Mace, light",
+    "source_id" => 1,
+    "subtype" => "light melee",
+    "type" => "simple",
+    "weight" => "4 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 6,
+    "currency" => "gp",
+    "name" => "Sickle",
+    "source_id" => 1,
+    "subtype" => "light melee",
+    "type" => "simple",
+    "weight" => "2 lbs."
+  },
+  {
+    "category" => "weapons",
+    "currency" => undef,
+    "name" => "Club",
+    "source_id" => 1,
+    "subtype" => "one-handed melee",
+    "type" => "simple",
+    "weight" => "3 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 12,
+    "currency" => "gp",
+    "name" => "Mace, heavy",
+    "source_id" => 1,
+    "subtype" => "one-handed melee",
+    "type" => "simple",
+    "weight" => "8 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 8,
+    "currency" => "gp",
+    "name" => "Morningstar",
+    "source_id" => 1,
+    "subtype" => "one-handed melee",
+    "type" => "simple",
+    "weight" => "6 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 1,
+    "currency" => "gp",
+    "name" => "Shortspear",
+    "source_id" => 1,
+    "subtype" => "one-handed melee",
+    "type" => "simple",
+    "weight" => "3 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 5,
+    "currency" => "gp",
+    "name" => "Longspear",
+    "source_id" => 1,
+    "subtype" => "two-handed melee",
+    "type" => "simple",
+    "weight" => "9 lbs."
+  },
+  {
+    "category" => "weapons",
+    "currency" => undef,
+    "name" => "Quarterstaff",
+    "source_id" => 1,
+    "subtype" => "two-handed melee",
+    "type" => "simple",
+    "weight" => "4 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 2,
+    "currency" => "gp",
+    "name" => "Spear",
+    "source_id" => 1,
+    "subtype" => "two-handed melee",
+    "type" => "simple",
+    "weight" => "6 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 2,
+    "currency" => "gp",
+    "name" => "Blowgun",
+    "source_id" => 1,
+    "subtype" => "ranged",
+    "type" => "simple",
+    "weight" => "1 lb."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 5,
+    "currency" => "sp",
+    "name" => "Darts, blowgun (10)",
+    "source_id" => 1,
+    "subtype" => "ranged",
+    "type" => "simple",
+    "weight" => undef
+  },
+  {
+    "category" => "weapons",
+    "cost" => 50,
+    "currency" => "gp",
+    "name" => "Crossbow, heavy",
+    "source_id" => 1,
+    "subtype" => "ranged",
+    "type" => "simple",
+    "weight" => "8 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 1,
+    "currency" => "gp",
+    "name" => "Bolts, crossbow (10)",
+    "source_id" => 1,
+    "subtype" => "ranged",
+    "type" => "simple",
+    "weight" => "1 lb."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 35,
+    "currency" => "gp",
+    "name" => "Crossbow, light",
+    "source_id" => 1,
+    "subtype" => "ranged",
+    "type" => "simple",
+    "weight" => "4 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 1,
+    "currency" => "gp",
+    "name" => "Bolts, crossbow (10)",
+    "source_id" => 1,
+    "subtype" => "ranged",
+    "type" => "simple",
+    "weight" => "1 lb."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 5,
+    "currency" => "sp",
+    "name" => "Dart",
+    "source_id" => 1,
+    "subtype" => "ranged",
+    "type" => "simple",
+    "weight" => "1/2 lb."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 1,
+    "currency" => "gp",
+    "name" => "Javelin",
+    "source_id" => 1,
+    "subtype" => "ranged",
+    "type" => "simple",
+    "weight" => "2 lbs."
+  },
+  {
+    "category" => "weapons",
+    "currency" => undef,
+    "name" => "Sling",
+    "source_id" => 1,
+    "subtype" => "ranged",
+    "type" => "simple",
+    "weight" => undef
+  },
+  {
+    "category" => "weapons",
+    "cost" => 1,
+    "currency" => "sp",
+    "name" => "Bullets, sling (10)",
+    "source_id" => 1,
+    "subtype" => "ranged",
+    "type" => "simple",
+    "weight" => "5 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 8,
+    "currency" => "gp",
+    "name" => "Axe, throwing",
+    "source_id" => 1,
+    "subtype" => "light melee",
+    "type" => "martial",
+    "weight" => "2 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 1,
+    "currency" => "gp",
+    "name" => "Hammer, light",
+    "source_id" => 1,
+    "subtype" => "light melee",
+    "type" => "martial",
+    "weight" => "2 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 6,
+    "currency" => "gp",
+    "name" => "Handaxe",
+    "source_id" => 1,
+    "subtype" => "light melee",
+    "type" => "martial",
+    "weight" => "3 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 8,
+    "currency" => "gp",
+    "name" => "Kukri",
+    "source_id" => 1,
+    "subtype" => "light melee",
+    "type" => "martial",
+    "weight" => "2 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 4,
+    "currency" => "gp",
+    "name" => "Pick, light",
+    "source_id" => 1,
+    "subtype" => "light melee",
+    "type" => "martial",
+    "weight" => "3 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 1,
+    "currency" => "gp",
+    "name" => "Sap",
+    "source_id" => 1,
+    "subtype" => "light melee",
+    "type" => "martial",
+    "weight" => "2 lbs."
+  },
+  {
+    "category" => "weapons",
+    "currency" => "special",
+    "name" => "Shield, light",
+    "source_id" => 1,
+    "subtype" => "light melee",
+    "type" => "martial",
+    "weight" => "special"
+  },
+  {
+    "category" => "weapons",
+    "currency" => "special",
+    "name" => "Spiked armor",
+    "source_id" => 1,
+    "subtype" => "light melee",
+    "type" => "martial",
+    "weight" => "special"
+  },
+  {
+    "category" => "weapons",
+    "currency" => "special",
+    "name" => "Spiked shield, light",
+    "source_id" => 1,
+    "subtype" => "light melee",
+    "type" => "martial",
+    "weight" => "special"
+  },
+  {
+    "category" => "weapons",
+    "cost" => 24,
+    "currency" => "gp",
+    "name" => "Starknife",
+    "source_id" => 1,
+    "subtype" => "light melee",
+    "type" => "martial",
+    "weight" => "3 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 10,
+    "currency" => "gp",
+    "name" => "Sword, short",
+    "source_id" => 1,
+    "subtype" => "light melee",
+    "type" => "martial",
+    "weight" => "2 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 10,
+    "currency" => "gp",
+    "name" => "Battleaxe",
+    "source_id" => 1,
+    "subtype" => "one-handed melee",
+    "type" => "martial",
+    "weight" => "6 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 8,
+    "currency" => "gp",
+    "name" => "Flail",
+    "source_id" => 1,
+    "subtype" => "one-handed melee",
+    "type" => "martial",
+    "weight" => "5 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 15,
+    "currency" => "gp",
+    "name" => "Longsword",
+    "source_id" => 1,
+    "subtype" => "one-handed melee",
+    "type" => "martial",
+    "weight" => "4 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 8,
+    "currency" => "gp",
+    "name" => "Pick, heavy",
+    "source_id" => 1,
+    "subtype" => "one-handed melee",
+    "type" => "martial",
+    "weight" => "6 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 20,
+    "currency" => "gp",
+    "name" => "Rapier",
+    "source_id" => 1,
+    "subtype" => "one-handed melee",
+    "type" => "martial",
+    "weight" => "2 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 15,
+    "currency" => "gp",
+    "name" => "Scimitar",
+    "source_id" => 1,
+    "subtype" => "one-handed melee",
+    "type" => "martial",
+    "weight" => "4 lbs."
+  },
+  {
+    "category" => "weapons",
+    "currency" => "special",
+    "name" => "Shield, heavy",
+    "source_id" => 1,
+    "subtype" => "one-handed melee",
+    "type" => "martial",
+    "weight" => "special"
+  },
+  {
+    "category" => "weapons",
+    "currency" => "special",
+    "name" => "Spiked shield, heavy",
+    "source_id" => 1,
+    "subtype" => "one-handed melee",
+    "type" => "martial",
+    "weight" => "special"
+  },
+  {
+    "category" => "weapons",
+    "cost" => 15,
+    "currency" => "gp",
+    "name" => "Trident",
+    "source_id" => 1,
+    "subtype" => "one-handed melee",
+    "type" => "martial",
+    "weight" => "4 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 12,
+    "currency" => "gp",
+    "name" => "Warhammer",
+    "source_id" => 1,
+    "subtype" => "one-handed melee",
+    "type" => "martial",
+    "weight" => "5 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 75,
+    "currency" => "gp",
+    "name" => "Falchion",
+    "source_id" => 1,
+    "subtype" => "two-handed melee",
+    "type" => "martial",
+    "weight" => "8 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 8,
+    "currency" => "gp",
+    "name" => "Glaive",
+    "source_id" => 1,
+    "subtype" => "two-handed melee",
+    "type" => "martial",
+    "weight" => "10 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 20,
+    "currency" => "gp",
+    "name" => "Greataxe",
+    "source_id" => 1,
+    "subtype" => "two-handed melee",
+    "type" => "martial",
+    "weight" => "12 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 5,
+    "currency" => "gp",
+    "name" => "Greatclub",
+    "source_id" => 1,
+    "subtype" => "two-handed melee",
+    "type" => "martial",
+    "weight" => "8 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 15,
+    "currency" => "gp",
+    "name" => "Flail, heavy",
+    "source_id" => 1,
+    "subtype" => "two-handed melee",
+    "type" => "martial",
+    "weight" => "10 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 50,
+    "currency" => "gp",
+    "name" => "Greatsword",
+    "source_id" => 1,
+    "subtype" => "two-handed melee",
+    "type" => "martial",
+    "weight" => "8 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 9,
+    "currency" => "gp",
+    "name" => "Guisarme",
+    "source_id" => 1,
+    "subtype" => "two-handed melee",
+    "type" => "martial",
+    "weight" => "12 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 10,
+    "currency" => "gp",
+    "name" => "Halberd",
+    "source_id" => 1,
+    "subtype" => "two-handed melee",
+    "type" => "martial",
+    "weight" => "12 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 10,
+    "currency" => "gp",
+    "name" => "Lance",
+    "source_id" => 1,
+    "subtype" => "two-handed melee",
+    "type" => "martial",
+    "weight" => "10 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 10,
+    "currency" => "gp",
+    "name" => "Ranseur",
+    "source_id" => 1,
+    "subtype" => "two-handed melee",
+    "type" => "martial",
+    "weight" => "12 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 18,
+    "currency" => "gp",
+    "name" => "Scythe",
+    "source_id" => 1,
+    "subtype" => "two-handed melee",
+    "type" => "martial",
+    "weight" => "10 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 2,
+    "currency" => "gp",
+    "name" => "Kama",
+    "source_id" => 1,
+    "subtype" => "light melee",
+    "type" => "exotic",
+    "weight" => "2 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 2,
+    "currency" => "gp",
+    "name" => "Nunchaku",
+    "source_id" => 1,
+    "subtype" => "light melee",
+    "type" => "exotic",
+    "weight" => "2 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 1,
+    "currency" => "gp",
+    "name" => "Sai",
+    "source_id" => 1,
+    "subtype" => "light melee",
+    "type" => "exotic",
+    "weight" => "1 lb."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 3,
+    "currency" => "gp",
+    "name" => "Siangham",
+    "source_id" => 1,
+    "subtype" => "light melee",
+    "type" => "exotic",
+    "weight" => "1 lb."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 35,
+    "currency" => "gp",
+    "name" => "Sword, bastard",
+    "source_id" => 1,
+    "subtype" => "one-handed melee",
+    "type" => "exotic",
+    "weight" => "6 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 30,
+    "currency" => "gp",
+    "name" => "Waraxe, dwarven",
+    "source_id" => 1,
+    "subtype" => "one-handed melee",
+    "type" => "exotic",
+    "weight" => "8 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 1,
+    "currency" => "gp",
+    "name" => "Whip",
+    "source_id" => 1,
+    "subtype" => "one-handed melee",
+    "type" => "exotic",
+    "weight" => "2 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 60,
+    "currency" => "gp",
+    "name" => "Axe, orc double",
+    "source_id" => 1,
+    "subtype" => "two-handed melee",
+    "type" => "exotic",
+    "weight" => "15 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 25,
+    "currency" => "gp",
+    "name" => "Chain, spiked",
+    "source_id" => 1,
+    "subtype" => "two-handed melee",
+    "type" => "exotic",
+    "weight" => "10 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 80,
+    "currency" => "gp",
+    "name" => "Curve blade, elven",
+    "source_id" => 1,
+    "subtype" => "two-handed melee",
+    "type" => "exotic",
+    "weight" => "7 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 90,
+    "currency" => "gp",
+    "name" => "Flail, dire",
+    "source_id" => 1,
+    "subtype" => "two-handed melee",
+    "type" => "exotic",
+    "weight" => "10 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 20,
+    "currency" => "gp",
+    "name" => "Hammer, gnome hooked",
+    "source_id" => 1,
+    "subtype" => "two-handed melee",
+    "type" => "exotic",
+    "weight" => "6 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 100,
+    "currency" => "gp",
+    "name" => "Sword, two-bladed",
+    "source_id" => 1,
+    "subtype" => "two-handed melee",
+    "type" => "exotic",
+    "weight" => "10 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 50,
+    "currency" => "gp",
+    "name" => "Urgrosh, dwarven",
+    "source_id" => 1,
+    "subtype" => "two-handed melee",
+    "type" => "exotic",
+    "weight" => "12 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 5,
+    "currency" => "gp",
+    "name" => "Bolas",
+    "source_id" => 1,
+    "subtype" => "ranged",
+    "type" => "exotic",
+    "weight" => "2 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 100,
+    "currency" => "gp",
+    "name" => "Crossbow, hand",
+    "source_id" => 1,
+    "subtype" => "ranged",
+    "type" => "exotic",
+    "weight" => "2 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 1,
+    "currency" => "gp",
+    "name" => "Bolts (10)",
+    "source_id" => 1,
+    "subtype" => "ranged",
+    "type" => "exotic",
+    "weight" => "1 lb."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 400,
+    "currency" => "gp",
+    "name" => "Crossbow, repeating heavy",
+    "source_id" => 1,
+    "subtype" => "ranged",
+    "type" => "exotic",
+    "weight" => "12 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 1,
+    "currency" => "gp",
+    "name" => "Bolts (5)",
+    "source_id" => 1,
+    "subtype" => "ranged",
+    "type" => "exotic",
+    "weight" => "1 lb."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 250,
+    "currency" => "gp",
+    "name" => "Crossbow, repeating light",
+    "source_id" => 1,
+    "subtype" => "ranged",
+    "type" => "exotic",
+    "weight" => "6 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 1,
+    "currency" => "gp",
+    "name" => "Bolts (5)",
+    "source_id" => 1,
+    "subtype" => "ranged",
+    "type" => "exotic",
+    "weight" => "1 lb."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 20,
+    "currency" => "gp",
+    "name" => "Net",
+    "source_id" => 1,
+    "subtype" => "ranged",
+    "type" => "exotic",
+    "weight" => "6 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 1,
+    "currency" => "gp",
+    "name" => "Shuriken (5)",
+    "source_id" => 1,
+    "subtype" => "ranged",
+    "type" => "exotic",
+    "weight" => "1/2 lb."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 20,
+    "currency" => "gp",
+    "name" => "Sling staff, halfling",
+    "source_id" => 1,
+    "subtype" => "ranged",
+    "type" => "exotic",
+    "weight" => "3 lbs."
+  },
+  {
+    "category" => "weapons",
+    "cost" => 1,
+    "currency" => "sp",
+    "name" => "Bullets, sling (10)",
+    "source_id" => 1,
+    "subtype" => "ranged",
+    "type" => "exotic",
+    "weight" => "5 lbs."
+  }
+]

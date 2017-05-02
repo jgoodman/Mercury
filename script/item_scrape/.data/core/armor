@@ -1,0 +1,211 @@
+[
+  {
+    "category" => "armor",
+    "cost" => 5,
+    "currency" => "gp",
+    "name" => "Padded",
+    "source_id" => 1,
+    "subtype" => "light",
+    "type" => "",
+    "weight" => "10 lbs."
+  },
+  {
+    "category" => "armor",
+    "cost" => 10,
+    "currency" => "gp",
+    "name" => "Leather",
+    "source_id" => 1,
+    "subtype" => "light",
+    "type" => "",
+    "weight" => "15 lbs."
+  },
+  {
+    "category" => "armor",
+    "cost" => 25,
+    "currency" => "gp",
+    "name" => "Studded leather",
+    "source_id" => 1,
+    "subtype" => "light",
+    "type" => "",
+    "weight" => "20 lbs."
+  },
+  {
+    "category" => "armor",
+    "cost" => 100,
+    "currency" => "gp",
+    "name" => "Chain shirt",
+    "source_id" => 1,
+    "subtype" => "light",
+    "type" => "",
+    "weight" => "25 lbs."
+  },
+  {
+    "category" => "armor",
+    "cost" => 15,
+    "currency" => "gp",
+    "name" => "Hide",
+    "source_id" => 1,
+    "subtype" => "medium",
+    "type" => "",
+    "weight" => "25 lbs."
+  },
+  {
+    "category" => "armor",
+    "cost" => 50,
+    "currency" => "gp",
+    "name" => "Scale mail",
+    "source_id" => 1,
+    "subtype" => "medium",
+    "type" => "",
+    "weight" => "30 lbs."
+  },
+  {
+    "category" => "armor",
+    "cost" => 150,
+    "currency" => "gp",
+    "name" => "Chainmail",
+    "source_id" => 1,
+    "subtype" => "medium",
+    "type" => "",
+    "weight" => "40 lbs."
+  },
+  {
+    "category" => "armor",
+    "cost" => 200,
+    "currency" => "gp",
+    "name" => "Breastplate",
+    "source_id" => 1,
+    "subtype" => "medium",
+    "type" => "",
+    "weight" => "30 lbs."
+  },
+  {
+    "category" => "armor",
+    "cost" => 200,
+    "currency" => "gp",
+    "name" => "Splint mail",
+    "source_id" => 1,
+    "subtype" => "heavy",
+    "type" => "",
+    "weight" => "45 lbs."
+  },
+  {
+    "category" => "armor",
+    "cost" => 250,
+    "currency" => "gp",
+    "name" => "Banded mail",
+    "source_id" => 1,
+    "subtype" => "heavy",
+    "type" => "",
+    "weight" => "35 lbs."
+  },
+  {
+    "category" => "armor",
+    "cost" => 600,
+    "currency" => "gp",
+    "name" => "Half-plate",
+    "source_id" => 1,
+    "subtype" => "heavy",
+    "type" => "",
+    "weight" => "50 lbs."
+  },
+  {
+    "category" => "armor",
+    "currency" => "1,500",
+    "name" => "Full plate",
+    "source_id" => 1,
+    "subtype" => "heavy",
+    "type" => "",
+    "weight" => "50 lbs."
+  },
+  {
+    "category" => "armor",
+    "cost" => 5,
+    "currency" => "gp",
+    "name" => "Buckler",
+    "source_id" => 1,
+    "subtype" => "shields",
+    "type" => "",
+    "weight" => "5 lbs."
+  },
+  {
+    "category" => "armor",
+    "cost" => 3,
+    "currency" => "gp",
+    "name" => "Shield, light wooden",
+    "source_id" => 1,
+    "subtype" => "shields",
+    "type" => "",
+    "weight" => "5 lbs."
+  },
+  {
+    "category" => "armor",
+    "cost" => 9,
+    "currency" => "gp",
+    "name" => "Shield, light steel",
+    "source_id" => 1,
+    "subtype" => "shields",
+    "type" => "",
+    "weight" => "6 lbs."
+  },
+  {
+    "category" => "armor",
+    "cost" => 7,
+    "currency" => "gp",
+    "name" => "Shield, heavy wooden",
+    "source_id" => 1,
+    "subtype" => "shields",
+    "type" => "",
+    "weight" => "10 lbs."
+  },
+  {
+    "category" => "armor",
+    "cost" => 20,
+    "currency" => "gp",
+    "name" => "Shield, heavy steel",
+    "source_id" => 1,
+    "subtype" => "shields",
+    "type" => "",
+    "weight" => "15 lbs."
+  },
+  {
+    "category" => "armor",
+    "cost" => 30,
+    "currency" => "gp",
+    "name" => "Shield, tower",
+    "source_id" => 1,
+    "subtype" => "shields",
+    "type" => "",
+    "weight" => "45 lbs."
+  },
+  {
+    "category" => "armor",
+    "cost" => "+50",
+    "currency" => "gp",
+    "name" => "Armor spikes",
+    "source_id" => 1,
+    "subtype" => "extras",
+    "type" => "",
+    "weight" => "+10 lbs."
+  },
+  {
+    "category" => "armor",
+    "cost" => 8,
+    "currency" => "gp",
+    "name" => "Gauntlet, locked",
+    "source_id" => 1,
+    "subtype" => "extras",
+    "type" => "",
+    "weight" => "+5 lbs."
+  },
+  {
+    "category" => "armor",
+    "cost" => "+10",
+    "currency" => "gp",
+    "name" => "Shield spikes",
+    "source_id" => 1,
+    "subtype" => "extras",
+    "type" => "",
+    "weight" => "+5 lbs."
+  }
+]

@@ -1,0 +1,27 @@
+# GENERATED
+#   From: http://paizo.com/pathfinderRPG/prd/coreRulebook/equipment.html#table-6-3-trade-goods
+#   On:   2017-05-02
+[
+    { cost => 1,    currency => 'cp',  name => 'One pound of wheat',        weight => '1 lb.'     },
+    { cost => 2,    currency => 'cp',  name => 'One pound of flour',        weight => '1 lb.'     },
+    { cost => 2,    currency => 'cp',  name => 'Chicken',                   weight => '1 lb.'     },
+    { cost => 1,    currency => 'sp',  name => 'One pound of iron',         weight => '1 lb.'     },
+    { cost => 5,    currency => 'sp',  name => 'One pound of tobacco',      weight => '1 lb.'     },
+    { cost => 5,    currency => 'sp',  name => 'One pound of copper',       weight => '1 lb.'     },
+    { cost => 1,    currency => 'gp',  name => 'One pound of cinnamon',     weight => '1 lb.'     },
+    { cost => 1,    currency => 'gp',  name => 'Goat',                      weight => '100 lbs.'  },
+    { cost => 2,    currency => 'gp',  name => 'One pound of ginger',       weight => '1 lb.'     },
+    { cost => 2,    currency => 'gp',  name => 'One pount of Pepper',       weight => '1 lb.'     },
+    { cost => 2,    currency => 'gp',  name => 'Sheep',                     weight => '200 lbs.'  },
+    { cost => 3,    currency => 'gp',  name => 'Pig',                       weight => '300 lbs.'  },
+    { cost => 4,    currency => 'gp',  name => 'One square yard of linen',  weight => '4.5 oz.'   },
+    { cost => 5,    currency => 'gp',  name => 'One pound of salt',         weight => '1 lb.'     },
+    { cost => 5,    currency => 'gp',  name => 'One pound of silver',       weight => '1 lb.'     },
+    { cost => 10,   currency => 'gp',  name => 'One square yard of silk',   weight => '3.5 oz.'   },
+    { cost => 10,   currency => 'gp',  name => 'Cow',                       weight => '1000 lbs.' },
+    { cost => 15,   currency => 'gp',  name => 'One pound of saffron',      weight => '1 lb.'     },
+    { cost => 15,   currency => 'gp',  name => 'One pound of Cloves',       weight => '1 lb.'     },
+    { cost => 15,   currency => 'gp',  name => 'Ox',                        weight => '2000 lbs.' },
+    { cost => 50,   currency => 'gp',  name => 'One pound of gold',         weight => '1 lb.'     },
+    { cost => 500,  currency => 'gp',  name => 'One pound of platinum',     weight => '1 lb.'     },
+]

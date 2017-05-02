@@ -5,13 +5,21 @@
 </p>
 <table>
   <tr>
+    <th>Category</th>
     <th>Name</th>
+    <th>Type</th>
+    <th>Subtype</th>
     <th>Cost</th>
+    <th>Weight</th>
   </tr>
 % for my $item (@$items) {
   <tr>
+    <td><%= $item->category || '--' %></td>
     <td><%= link_to $item->name => '/item/' . $item->id %></td>
+    <td><%= $item->type || '--' %></td>
+    <td><%= $item->subtype || '--' %></td>
     <td><%= $item->cost . ' ' . $item->currency %></td>
+    <td><%= $item->weight || '--' %></td>
   </tr>
 % }
 </table>
