@@ -7,3 +7,4 @@ requires 'DBD::SQLite';
 requires 'DBIx::Class';
 requires 'DBIx::Class::DeploymentHandler';
 requires 'Text::Unidecode';
+requires 'HTML::Entities';

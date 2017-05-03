@@ -6,6 +6,7 @@ use Mojo::UserAgent;
 use Mojo::File;
 use Mojo::Util qw(dumper);
 use Text::Unidecode qw(unidecode);
+use HTML::Entities;
 
 use FindBin qw($Bin);
 use lib "$Bin/../../lib";
@@ -98,7 +99,7 @@ sub _parse_table {
             }
 
             my %item = (
-                name      => shift(@$values),
+                name      => decode_entities(unidecode(shift(@$values))),
                 category  => $category,
                 type      => defined($type)    ? lc $type    : '',
                 subtype   => defined($subtype) ? lc $subtype : '',
@@ -111,7 +112,7 @@ sub _parse_table {
             my @cols = @{$self->_columns};
             foreach my $value (@$values) {
                 my $key = lc(shift(@cols));
-                $value = unidecode($value);
+                $value = decode_entities(unidecode($value));
                 $value = undef if $value eq '--';
                 $value =~ s{<sup>\d+</sup>}{}g if defined $value;
                 if($key =~ m/cost|weight/) {

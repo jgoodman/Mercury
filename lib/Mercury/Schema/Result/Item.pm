@@ -26,4 +26,19 @@ __PACKAGE__->set_primary_key("id");
 __PACKAGE__->has_many(meta     => 'Mercury::Schema::Result::ItemMeta', 'item_id');
 __PACKAGE__->belongs_to(source => 'Mercury::Schema::Result::Source',   'source_id');
 
+sub cp {
+    my $self = shift;
+
+    my $c = $self->cost;
+    my %map = (
+        cp => $c,
+        sp => $c * 10,
+        gp => $c * 10 * 10,
+        pp => $c * 10 * 10 * 10,
+    );
+
+    my $cur = $self->currency;
+    return $map{$cur} || die 'unknown currency';
+}
+
 1;
