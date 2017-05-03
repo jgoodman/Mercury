@@ -21,6 +21,7 @@ sub startup {
 
   $r->get('/character/:character_id')->to('character#info');
   $r->get('/character/:character_id/inventory')->to('character#inventory');
+  $r->get('/character/:character_id/transactions')->to('character#transactions');
   $r->post('/character/:character_id/purchase_item/:item_id')->to('character#purchase_item');
 
   #$r->get('/merchants')->to('merchant#list');

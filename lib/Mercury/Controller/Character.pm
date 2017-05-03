@@ -6,8 +6,20 @@ sub inventory {
 
     my $i = $self->param('character_id');
     my $character = ($self->db->resultset('Character')->search({ id => $i }))[0];
+    return $self->render(status => 404) unless $character;
 
     $self->render(character => $character);
+}
+
+sub transactions {
+    my $self = shift;
+
+    my $i = $self->param('character_id');
+    my $character = ($self->db->resultset('Character')->search({ id => $i }))[0];
+    return $self->render(status => 404) unless $character;
+
+    my @transactions = $self->db->resultset('TransactionLog')->search({ character_id => $i });
+    $self->render(transactions => \@transactions);
 }
 
 sub purchase_item {
@@ -18,13 +30,25 @@ sub purchase_item {
     my $character_id = $self->param('character_id');
     my $character    = ($self->db->resultset('Character')->search({ id => $character_id }))[0];
 
-    # Validate and subtract money
+    return $self->render(status => 404) unless $character && $item;
+
     unless($character->purse >= $item->cp) {
         return $self->render(error => 'Insufficient Funds', status => 400);
     }
+
+    my $guard = $self->db->txn_scope_guard; # start transaction
+
+    my $transact_log = ($self->db->resultset('TransactionLog')->create({
+        character_id  => $character_id,
+        item_id       => $item_id,
+        item_cost     => $item->cost,
+        item_currency => $item->currency,
+        purse_prepay  => $character->purse,
+    }))[0];
+
     my $new_amount = $character->purse - $item->cp;
-    warn $item->cp, $self->dumper($new_amount);
     $character->update({ purse => $new_amount });
+    $transact_log->update({ purse_postpay => $new_amount });
 
     # Increment item quantity
     my $slot = ($character->inventory({ item_id => $item_id }))[0];
@@ -36,6 +60,8 @@ sub purchase_item {
         $character->create_related(inventory => { item_id => $item_id, qty => 1 });
     }
 
+    $guard->commit;
+
     $self->redirect_to("/character/$character_id/inventory");
 }
 
@@ -45,4 +71,3 @@ sub increment_item_qty {
 }
 
 1;
-

@@ -1,0 +1,26 @@
+% layout 'default';
+% title 'Welcome';
+<p>
+  Character transactions
+</p>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Timestamp</th>
+    <th>Name</th>
+    <th>Cost</th>
+    <th>Starting Funds</th>
+    <th>Remaining Funds </th>
+  </tr>
+% for my $transact (@$transactions) {
+  <tr>
+    <td><%= $transact->id %></td>
+    <td><%= $transact->timestamp %></td>
+    <td><%= $transact->item->name %></td>
+    <td><%= $transact->item_cost . ' ' . $transact->item_currency %></td>
+    <td><%= $transact->purse_prepay %></td>
+    <td><%= $transact->purse_postpay %></td>
+  </tr>
+% }
+</table>
+
