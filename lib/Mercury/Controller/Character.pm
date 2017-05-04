@@ -1,6 +1,18 @@
 package Mercury::Controller::Character;
 use Mojo::Base 'Mojolicious::Controller';
 
+sub create {
+    my $self = shift;
+
+    my $name      = $self->param('name');
+    my $character = ($self->db->resultset('Character')->create({
+        name  => $name,
+        purse => 0,
+    }))[0];
+
+    $self->render(character => $character);
+}
+
 sub inventory {
     my $self = shift;
 

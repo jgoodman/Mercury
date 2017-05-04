@@ -19,6 +19,7 @@ sub startup {
   $r->get('/items')->to('item#list');
   $r->get('/item/:item_id')->to('item#info');
 
+  $r->post('/character')->to('character#create');
   $r->get('/character/:character_id')->to('character#info');
   $r->get('/character/:character_id/inventory')->to('character#inventory');
   $r->get('/character/:character_id/transactions')->to('character#transactions');
