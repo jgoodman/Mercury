@@ -3,3 +3,6 @@ local
 public/images
 test.db
 dbicdh
+log
+mercury.conf
+script/hypnotoad.pid

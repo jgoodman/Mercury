@@ -1,0 +1,13 @@
+% layout 'default';
+% title 'Items Missing Image';
+<h1>Items Missing Image</h1>
+<style>
+a { font-size:150%; }
+</style>
+<ul>
+% foreach my $item (@$items) {
+  <li>
+    <a href="/item/<%= $item->id %>/query/images"><%= $item->name %></a>
+  </li>
+% }
+</ul>

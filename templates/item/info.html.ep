@@ -1,5 +1,5 @@
 % layout 'default';
-% title 'Welcome';
+% title 'Item Info';
 <h1><%= $item->name %></h1>
 <table>
   <tr>

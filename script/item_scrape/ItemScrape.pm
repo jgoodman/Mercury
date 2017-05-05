@@ -86,7 +86,8 @@ sub _parse_table {
             })
             ->each
     ) {
-        my $type = shift(@types) // die('Out of types');
+        my $type = shift(@types);
+        die('Out of types') unless defined $type;;
         my $subtype;
 
         print ' -> ['.join(':',map { _clean($_) } ($category,$type))."] Processing individual type\n";
@@ -119,9 +120,9 @@ sub _parse_table {
                     $item{$key} = $value;
                     if($key eq 'cost') {
                         my @remainder;
-                        ($item{'cost'}, $item{'currency'}, @remainder) = split(" ", ($item{cost} // ''));
+                        ($item{'cost'}, $item{'currency'}, @remainder) = split(" ", ($item{cost} || 0));
                         $item{'currency'} .= join(' ', @remainder);
-                        $item{'currency'} = delete $item{'cost'} if ($item{'cost'} // '') !~ m/^\+?\d+$/;
+                        $item{'currency'} = delete $item{'cost'} if ($item{'cost'} || 0) !~ m/^\+?\d+$/;
                     }
                 }
                 else {
@@ -161,7 +162,7 @@ sub _columns {
             ->first('content')
             ->find('th')
             ->map('content')
-            ->map( sub { s|<sup>\d+</sup>||r } )
+            #->map( sub { s|<sup>\d+</sup>||r } )
             ->each;
 
         shift(@columns); # remove family

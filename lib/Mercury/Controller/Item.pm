@@ -1,6 +1,12 @@
 package Mercury::Controller::Item;
 use Mojo::Base 'Mojolicious::Controller';
 
+use Mojo::Util qw(dumper);
+use Mojo::URL;
+use Mojo::File;
+use List::MoreUtils qw(uniq);
+use Image::Grab;
+
 sub list {
     my $self  = shift;
     my @items = $self->db->resultset('Item')->search(undef, {
@@ -24,6 +30,75 @@ sub info {
         item          => $item,
         img_file      => $img_file,
     );
+}
+
+sub missing_image {
+    my $c  = shift;
+    my @items = grep { ! -e $c->config->{'image_dir'}.'/'.$_->id.'.jpg' } $c->db->resultset('Item')->search;
+    $c->render(items => \@items);
+};
+
+sub query_images {
+    my $c  = shift;
+
+    my $item_id = $c->param('item_id');
+    my $item    = ($c->db->resultset('Item')->search({ id => $item_id }))[0];
+    my $search  = $c->param('search') || $item->name;
+
+    my $url = Mojo::URL->new;
+    $url->scheme('https');
+    $url->host('www.googleapis.com');
+    $url->path('/customsearch/v1');
+    $url->query(
+        key => $c->config->{'google_search_api'}->{'key'},
+        cx  => $c->config->{'google_search_api'}->{'cx'},
+        q   => $search,
+    );
+
+    print "\n".$url->to_string;
+    my $resp = $c->ua->get($url->to_string)->res->json;
+    print dumper($resp)."\n";
+
+    my @links;
+    my $results = $resp->{'items'} || [ ];
+    foreach my $result (@$results) {
+        my $pagemap = $result->{"pagemap"};
+        push @links, grep { $_ } map { $_->{"og:image"} } @{$pagemap->{'metatags'}};
+        push @links, grep { $_ } map { $_->{"src"} } @{$pagemap->{'cse_image'}};
+    }
+    @links = grep { !blacklist($_) } uniq(@links);
+
+    $c->render(
+        item_id  => $item_id,
+        search   => $search,
+        links    => \@links
+    );
+};
+
+sub set_image {
+    my $c = shift;
+    my $ref = $c->param('ref');
+    my $item_id = $c->param('item_id');
+
+    my $image_dir = $c->config->{'image_dir'};
+    #my $pic = Image::Grab->new;
+    #$pic->url($ref);
+    #$pic->grab;
+
+    #my $path = Mojo::File->new("$image_dir/$item_id.jpg");
+    #$path->spurt($pic->image);
+
+    `wget -O $image_dir/$item_id.jpg $ref`;
+
+    $c->redirect_to('/items/missing/image');
+};
+
+sub blacklist {
+    my $url = shift;
+    my @blacklist = (
+        qr/facebook_share_image.png/
+    );
+    grep { $url !~ $_ } @blacklist ? 1 : 0;
 }
 
 1;

@@ -1,0 +1,9 @@
+{
+  schema  => 'spec.yml',
+  secrets => ['c6b663a8e54de141ebef3a796f2f0d5094a8d2dd',]
+  google_search_api => {
+    key => '<YOUR-GOOGLE-API-KEY>',
+    cx  => '<CUSTOM-SEARCH-ENGINE-ID>',
+  },
+  image_dir => 'public/images/item',
+}

@@ -9,3 +9,5 @@ requires 'DBIx::Class::DeploymentHandler';
 requires 'Text::Unidecode';
 requires 'HTML::Entities';
 requires 'Try::Tiny';
+requires 'List::MoreUtils';
+requires 'Image::Grab';

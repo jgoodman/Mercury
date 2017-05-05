@@ -1,0 +1,26 @@
+% layout 'default';
+% title 'Items Missing Images';
+<h1>Select Item Image</h1>
+<style>
+body, input { font-size: 200%; margin:.25em;}
+td { margin:4em; }
+</style>
+<table>
+<form method="get" action="/item/<%= $item_id %>/query/images">
+<input type="text" name="search" value="<%= $search %>">
+<input type="submit" value="search">
+<hr>
+</form>
+% foreach my $link (@$links) {
+  <tr>
+    <form method="post" action="/item/<%= $item_id %>/image">
+    <input type="hidden" name="ref" value="<%= $link %>">
+    <td>
+        <input type="submit" value="use image"><br>
+        <img src="<%= $link %>">
+        <hr>
+    </td>
+    </form>
+  </tr>
+% }
+</table>

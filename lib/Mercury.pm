@@ -1,7 +1,9 @@
 package Mercury;
 use Mojo::Base 'Mojolicious';
 use Mercury::Schema;
+use Mojo::UserAgent;
 
+has ua => sub { return Mojo::UserAgent->new };
 has schema => sub {
     # TODO: config connect settings
     return Mercury::Schema->connect('dbi:SQLite:' . ($ENV{TEST_DB} || 'test.db'));
@@ -12,12 +14,15 @@ sub startup {
 
   $self->helper(db => sub { $self->app->schema });
 
-  #my $config = $self->plugin('Config');
+  my $config = $self->plugin('Config');
 
   my $r = $self->routes;
   $r->get('/')->to('index#home');
   $r->get('/items')->to('item#list');
+  $r->get('/items/missing/image')->to('item#missing_image');
   $r->get('/item/:item_id')->to('item#info');
+  $r->get('/item/:item_id/query/images')->to('item#query_images');
+  $r->post('/item/:item_id/image')->to('item#set_image');
 
   $r->post('/character')->to('character#create');
   $r->get('/character/:character_id')->to('character#info');

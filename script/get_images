@@ -1,0 +1,74 @@
+#!/usr/bin/env perl
+
+use Mojolicious::Lite;
+use List::MoreUtils qw(uniq);
+use Mojo::UserAgent;
+use Mojo::URL;
+use Mojo::Util qw(dumper);
+
+use FindBin;
+use lib "$FindBin::Bin/../lib";
+use Mercury::Schema;
+
+get '/images' => sub {
+    my $c  = shift;
+    my $ua = Mojo::UserAgent->new;
+    my $s  = Mercury::Schema->connect('dbi:SQLite:' . ($ENV{TEST_DB} || 'test.db'));
+}
+
+get '/results' => sub {
+    my $c  = shift;
+    my $ua = Mojo::UserAgent->new;
+    my $s  = Mercury::Schema->connect('dbi:SQLite:' . ($ENV{TEST_DB} || 'test.db'));
+
+    my @links;
+    foreach my $item ($s->resultset('Item')->search) {
+        my $url = Mojo::URL->new;
+        $url->scheme('https');
+        $url->host('www.googleapis.com');
+        $url->path('/customsearch/v1');
+        $url->query(
+            key => 'AIzaSyCqhL2zxvbzbtro7ABKAuDfgHV0yBeD2mY',
+            cx  => '017151546365008219383:dc8azilwhre',
+            q   => $item->name." drawing",
+        );
+
+        my $resp = $ua->get($url->to_string)->res->json;
+
+        my $results = $resp->{'items'} || [ ];
+        foreach my $result (@$results) {
+            my $pagemap = $result->{"pagemap"};
+            push @links, grep { $_ } map { $_->{"og:image"} } @{$pagemap->{'metatags'}};
+            push @links, grep { $_ } map { $_->{"src"} } @{$pagemap->{'cse_image'}};
+        }
+        @links = grep { !blacklist($_) } uniq(@links);
+
+        #print $item->name."\n";
+        #print join("\n", @links);
+        #print "\n\n";
+        last;
+    }
+    $c->render(links => \@links);
+};
+
+sub blacklist {
+    my $url = shift;
+    my @blacklist = qw(
+        https://s.pinimg.com/images/facebook_share_image.png
+    );
+    grep { $url eq $_ } @blacklist ? 1 : 0;
+}
+
+app->start;
+
+__DATA__
+
+@@ images.html.ep
+<!DOCTYPE html>
+<html>
+<body>
+% foreach my $link (@$links) {
+  <img src="<%= $link %>">
+% }
+</body>
+</html>
