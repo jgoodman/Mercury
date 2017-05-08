@@ -2,12 +2,46 @@
 % title 'Items Missing Image';
 <h1>Items Missing Image</h1>
 <style>
-a { font-size:150%; }
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin');
+
+body, h1, table, th, tr, td {
+    font-family: "Libre Franklin";
+}
+
+h1 {
+    font-size:300%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    font-size:175%;
+    text-align: left;
+    padding: .5em .65em .5em .65em;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
 </style>
-<ul>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Category</th>
+    <th>Type</th>
+    <th>Subype</th>
+    <th>ID</th>
+  </tr>
 % foreach my $item (@$items) {
-  <li>
-    <a href="/item/<%= $item->id %>/query/images"><%= $item->name %></a>
-  </li>
+  <tr>
+    <td><a href="/item/<%= $item->id %>/query/images"><%= $item->name %></a></td>
+    <td><%= $item->category %></td>
+    <td><%= $item->type %></td>
+    <td><%= $item->subtype %></td>
+    <td><a href="/item/<%= $item->id %>/form/image"><%= $item->id %></a></td>
+  </tr>
 % }
-</ul>
+</table>

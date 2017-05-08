@@ -1,16 +1,35 @@
 % layout 'default';
 % title 'Item Info';
+<style>
+#item-info {
+    width: 35%;
+    float: left;
+    margin: 1em;
+    padding: 1em;
+}
+#item-image {
+    width: 55%;
+    float: left;
+    margin: 1em;
+    padding: 1em;
+}
+.item-info-cell {
+    font-size: 125%;
+}
+</style>
 <h1><%= $item->name %></h1>
+<div id="item-info">
 <table>
   <tr>
-    <th>Cost</th>
-  </tr>
-  <tr>
-    <td><%= $item->cost . ' ' . $item->currency %></td>
+    <th class="item-info-cell">Cost</th>
+    <td class="item-info-cell"><%= $item->cost . ' ' . $item->currency %></td>
   </tr>
 </table>
+</div>
 % if ($img_file) {
-%= image $img_file, style => "width:200px;height:200px;"
+<div id="item-image">
+    %= image $img_file, style => "width:100%;border: 1px solid;"
+</div>
 % }
 % if ($character_id) {
 <form method=POST action="/character/<%= $character_id %>/purchase_item/<%= $item->id %>">

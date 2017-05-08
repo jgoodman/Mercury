@@ -14,7 +14,7 @@
   </tr>
 % for my $item (@$items) {
   <tr>
-    <td><%= $item->category || '--' %></td>
+    <td><%= join " ", map { ucfirst $_ } split('_', ($item->category || '--')) %></td>
     <td><%= link_to $item->name => '/item/' . $item->id %></td>
     <td><%= $item->type || '--' %></td>
     <td><%= $item->subtype || '--' %></td>

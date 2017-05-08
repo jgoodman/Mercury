@@ -1,0 +1,10 @@
+% layout 'default';
+% title 'Set Image';
+<h1>Set Image</h1>
+<style>
+body, input { font-size: 175%; margin:.25em;}
+</style>
+<form method="post" action="/item/<%= $item_id %>/image">
+<input type="text" name="ref">
+<input type="submit" value="use image"><br>
+</form>

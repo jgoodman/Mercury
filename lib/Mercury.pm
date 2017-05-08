@@ -23,6 +23,7 @@ sub startup {
   $r->get('/item/:item_id')->to('item#info');
   $r->get('/item/:item_id/query/images')->to('item#query_images');
   $r->post('/item/:item_id/image')->to('item#set_image');
+  $r->get('/item/:item_id/form/image')->to('item#form_image');
 
   $r->post('/character')->to('character#create');
   $r->get('/character/:character_id')->to('character#info');
