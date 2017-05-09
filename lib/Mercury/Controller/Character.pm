@@ -30,7 +30,10 @@ sub transactions {
     my $character = ($self->db->resultset('Character')->search({ id => $i }))[0];
     return $self->render(status => 404) unless $character;
 
-    my @transactions = $self->db->resultset('TransactionLog')->search({ character_id => $i });
+    my @transactions = $self->db->resultset('TransactionLog')->search(
+        { character_id => $i },
+        { order_by     => { -desc => 'id' } },
+    );
     $self->render(transactions => \@transactions);
 }
 
@@ -51,6 +54,7 @@ sub purchase_item {
     my $guard = $self->db->txn_scope_guard; # start transaction
 
     my $transact_log = ($self->db->resultset('TransactionLog')->create({
+        category      => 'withdrawal',
         character_id  => $character_id,
         item_id       => $item_id,
         item_cost     => $item->cost,
@@ -74,7 +78,8 @@ sub purchase_item {
 
     $guard->commit;
 
-    $self->redirect_to("/character/$character_id/inventory");
+    my $callback_url_ref = $self->param('callback_url_ref') || '';
+    $self->redirect_to("$callback_url_ref/character/$character_id/inventory");
 }
 
 sub increment_item_qty {

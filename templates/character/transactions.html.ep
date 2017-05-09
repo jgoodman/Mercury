@@ -1,25 +1,40 @@
 % layout 'default';
-% title 'Welcome';
-<p>
-  Character transactions
-</p>
+% title 'Transactions';
+<style>
+tr:nth-child(even) {background-color: #f5f6f7}
+span.deposit_amount {
+    color: green;
+}
+span.remain_balance {
+    color: grey;
+}
+</style>
 <table>
   <tr>
     <th valign="bottom">ID</th>
     <th valign="bottom">Timestamp</th>
     <th valign="bottom">Name</th>
-    <th valign="bottom">Cost</th>
-    <th valign="bottom">Starting<br>Balance</th>
-    <th valign="bottom">Remaining<br>Balance</th>
+    <th valign="bottom">Amount</th>
+    <th valign="bottom">Balance</th>
   </tr>
 % for my $transact (@$transactions) {
   <tr>
     <td><%= $transact->id %></td>
     <td><%= $transact->timestamp %></td>
+  % if ($transact->category eq 'withdrawal') {
     <td><%= $transact->item->name %></td>
-    <td><%= $transact->item_cost . ' ' . $transact->item_currency %></td>
-    <td><%= $transact->purse_prepay  . ' cp' %></td>
-    <td><%= $transact->purse_postpay . ' cp' %></td>
+    <td>
+      <span>-
+  % } else {
+    <td><%= $transact->name || 'Deposit' %></td>
+    <td>
+      <span class="deposit_amount">+
+  % }
+      <%= $transact->item_cost . ' ' . $transact->item_currency %></span>
+    </td>
+    <td>
+      <span class="remain_balance"><%= $transact->purse_postpay . ' cp' %></span>
+    </td>
   </tr>
 % }
 </table>

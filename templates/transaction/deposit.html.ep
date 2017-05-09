@@ -1,0 +1,6 @@
+% layout 'default';
+% title 'Deposit';
+% if($error) {
+<h1><%= $status == 400 ? "400 Bad Request" : "$status Error"  %></h1>
+<span style="color:red"><%= $error %></span>
+% }

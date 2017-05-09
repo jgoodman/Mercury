@@ -17,7 +17,7 @@
     font-size: 125%;
 }
 </style>
-<h1><%= $item->name %></h1>
+<h2><%= $item->name %></h2>
 <div id="item-info">
 <table>
   <tr>
@@ -32,7 +32,8 @@
 </div>
 % }
 % if ($character_id) {
-<form method=POST action="/character/<%= $character_id %>/purchase_item/<%= $item->id %>">
+<form method=POST action="<%= $post_url_ref %>/character/<%= $character_id %>/purchase_item/<%= $item->id %>">
+<input type="hidden" value="<%= $callback_url_ref %>" name="callback_url_ref">
 <input type="submit" value="Purchase">
 </form>
 % }

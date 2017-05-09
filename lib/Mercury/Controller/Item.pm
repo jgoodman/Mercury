@@ -26,9 +26,11 @@ sub info {
     my $character_id = $self->param('character_id');
 
     $self->render(
-        character_id  => $character_id,
-        item          => $item,
-        img_file      => $img_file,
+        character_id     => $character_id,
+        item             => $item,
+        img_file         => $img_file,
+        post_url_ref     => $self->param('post_url_ref') || '',
+        callback_url_ref => $self->param('callback_url_ref') || '',
     );
 }
 

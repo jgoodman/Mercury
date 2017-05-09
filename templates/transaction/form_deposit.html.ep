@@ -1,0 +1,22 @@
+% layout 'default';
+% title 'Deposit Funds';
+<form method=POST action="<%= $post_url_ref %>/transaction/deposit">
+% if ($callback_url_ref) {
+<input type="hidden" value="<%= $callback_url_ref %>" name="callback_url_ref">
+% }
+<table>
+  <tr>
+    <td>Desc</td>
+    <td><input type="text" name="name"></td>
+  </tr>
+  <tr>
+    <td>CharacterID</td>
+    <td><input type="text" name="character_id"></td>
+  </tr>
+  <tr>
+    <td>Amount</td>
+    <td><input type="text" name="amount"></td>
+  </tr>
+<table>
+<input type="submit" value="Deposit">
+</form>

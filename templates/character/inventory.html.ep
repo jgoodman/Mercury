@@ -1,8 +1,5 @@
 % layout 'default';
-% title 'Welcome';
-<p>
-  Character inventory
-</p>
+% title 'Character inventory';
 <table>
   <tr>
     <th>Name</th>
